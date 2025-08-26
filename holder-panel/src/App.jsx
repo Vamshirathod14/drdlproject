@@ -4,7 +4,7 @@ import axios from 'axios';
 import './App.css';
 
 // Set base URL for axios
-axios.defaults.baseURL = 'http://localhost:5000/api';
+axios.defaults.baseURL = 'https://drdlproject-x131.onrender.com/api';
 
 // Auth Components
 const Login = ({ setToken, setUser }) => {
