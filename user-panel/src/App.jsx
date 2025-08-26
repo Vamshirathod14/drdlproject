@@ -358,7 +358,7 @@ const ItemsList = () => {
           <div key={item.code} className="item-card">
             <div className="item-image-container">
               <img 
-                src={item.image ? `https://drdlproject-x131.onrender.com/${item.image}` : placeholderSVG}
+                src={item.image ? `http://localhost:5000/${item.image}` : placeholderSVG}
                 alt={item.name}
                 onError={(e) => {
                   e.target.src = placeholderSVG;
