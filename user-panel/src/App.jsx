@@ -8,7 +8,7 @@ import './App.css';
 import { ClipLoader } from 'react-spinners';
 
 // Set base URL for axios
-axios.defaults.baseURL = 'http://localhost:5000/api';
+axios.defaults.baseURL = 'https://drdlproject-x131.onrender.com/api';
 
 // Custom Loading Component
 const Loading = () => (
@@ -358,7 +358,7 @@ const ItemsList = () => {
           <div key={item.code} className="item-card">
             <div className="item-image-container">
               <img 
-                src={item.image ? `http://localhost:5000/${item.image}` : placeholderSVG}
+                src={item.image ? `https://drdlproject-x131.onrender.com/${item.image}` : placeholderSVG}
                 alt={item.name}
                 onError={(e) => {
                   e.target.src = placeholderSVG;
